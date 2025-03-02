@@ -1,4 +1,4 @@
-# Malware Threat Detection and Analysis Pipeline
+# SecureNet - Analysis
 
 ## Overview
 This project establishes a comprehensive malware detection and analysis pipeline integrating YARA, Snort, machine learning-based classification, CAPEv2 sandboxing, and a Grafana-based visualization dashboard. The workflow ensures efficient detection, classification, and in-depth analysis of potential malware threats.
@@ -137,6 +137,32 @@ sudo apt install git python3 python3-pip -y
 ![image](Images/testimage3.jpeg)
 ![image](Images/testimage4.jpeg)
 
+### Step 8: Prevention Strategies
+#### Blocking Malicious IPs with Snort
+1. Open the Snort configuration file:
+```bash
+sudo nano /etc/snort/snort.conf
+```
+2. Add a rule to drop packets from identified malicious IPs:
+```bash
+drop ip [MALICIOUS_IP] any -> any any (msg:"Blocked Malicious IP"; sid:1000001;)
+```
+3. Restart Snort to apply changes:
+```bash
+sudo systemctl restart snort
+```
+
+#### Additional Prevention Measures
+- **Firewall Rules:** Use `iptables` or `ufw` to block identified malicious IPs.
+  ```bash
+  sudo ufw deny from [MALICIOUS_IP]
+  ```
+- **Regular YARA Rule Updates:** Keep YARA rules updated with the latest threat intelligence feeds.
+- **Email Alerts:** Configure alerts for detected threats using `fail2ban` or `Snort`.
+- **Automatic Log Analysis:** Set up a cron job to periodically analyze logs and update Snort rules.
+
+1. The IP adress
 ## Conclusion
 This pipeline provides a structured approach to malware detection, classification, and analysis using multiple tools, ensuring comprehensive threat intelligence. The integration of CAPEv2 and Grafana enhances the ability to monitor and understand malware behavior effectively.
+
 

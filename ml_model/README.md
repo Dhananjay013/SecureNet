@@ -1,6 +1,7 @@
-# ML Model
+# Maching Learning model
 ## Overview  
-This project focuses on detecting malicious software in Portable Executable (PE) files by employing machine learning techniques. By leveraging a hybrid static malware analysis approach—combining PE header data, byte-n-grams, and opcode-n-grams features—we aim to enhance cybersecurity defenses. The trained model identifies whether a given PE file is malicious or benign.
+This module contributes to malware detection in Portable Executable (PE) files using machine learning techniques. It utilizes a hybrid static analysis approach—integrating PE header data, byte-n-grams, and opcode-n-grams features—to strengthen threat detection capabilities. The trained model helps classify PE files as either malicious or benign, aiding in proactive cybersecurity defense.
+
 
 ## Project Resources  
 ### Datasets  

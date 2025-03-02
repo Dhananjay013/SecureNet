@@ -1,0 +1,2 @@
+ID,HEADER:,.text:,.Pav:,.idata:,.data:,.bss:,.rdata:,.edata:,.rsrc:,.tls:,.reloc:,.BSS:,.CODE,jmp,mov,retf,push,pop,xor,retn,nop,sub,inc,dec,add,imul,xchg,or,shr,cmp,call,shl,ror,rol,jnb,jz,rtn,lea,movzx,.dll,std::,:dword,edx,esi,eax,ebx,ecx,edi,ebp,esp,eip,
+Happy99,0,0,0,129,0,0,0,0,0,0,0,0,0,16,136,0,123,14,14,2,0,17,8,5,46,1,0,2,4,21,43,5,0,0,3,24,0,0,0,29,70,220,41,24,37,0,1,0,6,0,94,

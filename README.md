@@ -161,7 +161,7 @@ sudo systemctl restart snort
 - **Email Alerts:** Configure alerts for detected threats using `fail2ban` or `Snort`.
 - **Automatic Log Analysis:** Set up a cron job to periodically analyze logs and update Snort rules.
 
-1. The IP adress
+
 ## Conclusion
 This pipeline provides a structured approach to malware detection, classification, and analysis using multiple tools, ensuring comprehensive threat intelligence. The integration of CAPEv2 and Grafana enhances the ability to monitor and understand malware behavior effectively.
 

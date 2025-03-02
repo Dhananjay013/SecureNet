@@ -9,7 +9,7 @@ This project establishes a comprehensive malware detection and analysis pipeline
    - Snort is used to detect potential network intrusions and malicious IP traffic.
    
 2. **Machine Learning-Based Classification**
-   - Files that pass through YARA and Snort undergo feature extraction and classification using a machine learning model.
+   - Files that reamained undetected through YARA and Snort undergo feature extraction and classification using a machine learning model.
    - If classified as malware or suspicious, the files are forwarded to CAPEv2 for further analysis.
    - If a file is classified as benign, it is discarded.
    

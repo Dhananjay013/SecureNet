@@ -9,10 +9,10 @@ This repository contains YARA signatures for detecting various malware strains, 
 - rules/        # Directory containing 84 malware YARA signature files
 ```
 
-### Example Entry in `malware_index3.yar`
+### Example Entry in `index.yar`
 
 ```yara
-include "/media/sf_ubuntu_vm_shared/malware_yara/ATM.Malware.Ploutus-I.yar"
+include "/media/sf_ubuntu_vm_shared/yara/ATM.Malware.Ploutus-I.yar"
 ```
 
 ## Running YARA Signatures on Ubuntu/Linux

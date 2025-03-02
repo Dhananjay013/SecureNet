@@ -5,7 +5,7 @@ This repository provides a setup guide to install and configure Snort for live m
 ## Repository Structure
 
 ```
-- snort_rules/
+- rules/
   - malware-backdoor.rules
   - malware-cnc.rules
   - malware-other.rules
@@ -45,7 +45,7 @@ include $RULE_PATH/community.rules
 Move the provided Snort rule files into the Snort rules directory:
 
 ```sh
-sudo mv snort_rules/<*>.rules /etc/snort/rules/
+sudo mv rules/<*>.rules /etc/snort/rules/
 ```
 
 ### 5. Modify Snort Configuration File

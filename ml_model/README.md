@@ -1,7 +1,7 @@
-# Malware Classification in PE Files using Machine Learning  
-
+# Maching Learning model
 ## Overview  
-This project focuses on detecting malicious software in Portable Executable (PE) files by employing machine learning techniques. By leveraging a hybrid static malware analysis approach—combining PE header data, byte-n-grams, and opcode-n-grams features—we aim to enhance cybersecurity defenses. The trained model identifies whether a given PE file is malicious or benign.
+This module contributes to malware detection in Portable Executable (PE) files using machine learning techniques. It utilizes a hybrid static analysis approach—integrating PE header data, byte-n-grams, and opcode-n-grams features—to strengthen threat detection capabilities. The trained model helps classify PE files as either malicious or benign, aiding in proactive cybersecurity defense.
+
 
 ## Project Resources  
 ### Datasets  
@@ -35,12 +35,10 @@ Several machine learning models were tested on the final feature set, including 
 - **Evaluation Metrics**: Accuracy, F1-score, and Confusion Matrix were used to assess model performance.  
 - **Best Performing Model**: The Random Forest classifier outperformed others in malware detection.  
 
-The trained Random Forest model can be downloaded from [this link](https://github.com/DasariJayanth/Malware-Detection-in-PE-files-using-Machine-Learning/blob/ce340fed1072ce4517e22c50d03e28b414bc3e87/models/RF_model.pkl).  
-
 ## Setup and Execution  
 ### Clone the Repository  
 ```sh  
-git clone https://github.com/DasariJayanth/Malware-Detection-in-PE-files-using-Machine-Learning.git  
+git clone https://github.com/Dhananjay013/SecureNet.git  
 ```
 
 ### Create and Activate Virtual Environment  
@@ -77,6 +75,3 @@ deactivate
 - The project integrates static analysis techniques with machine learning for malware detection.  
 - Feature extraction techniques play a crucial role in improving model accuracy.  
 - The Random Forest model demonstrated superior performance among tested algorithms.  
-
-This project provides a structured approach to malware classification in PE files, offering valuable insights for cybersecurity applications.
-

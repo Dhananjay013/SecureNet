@@ -1118,6 +1118,119 @@
     },
     {
       "metadata": {
+        "name": "Killer 1.0.8",
+        "file_name": "killer_1.0.8.exe",
+        "file_size": "210KB",
+        "file_type": "PE Executable",
+        "hashes": {
+          "md5": "killer108md5hash",
+          "sha1": "killer108sha1hash",
+          "sha256": "killer108sha256hash"
+        },
+        "submission_time": "2025-03-02T21:10:00Z"
+      },
+      "process_execution": {
+        "parent_process": "explorer.exe",
+        "child_processes": [
+          {
+            "process_name": "killer_helper.exe",
+            "command_line": "killer_helper.exe /run",
+            "pid": 4003
+          }
+        ],
+        "registry_modifications": [
+          "HKCU\\Software\\Killer1.0.8"
+        ],
+        "mutexes": [
+          "Global\\killer_108_mutex"
+        ]
+      },
+      "network_activity": {
+        "dns_requests": [
+          {
+            "domain": "killer-108-control.net",
+            "resolved_ip": "172.16.1.60"
+          }
+        ],
+        "http_requests": [
+          {
+            "url": "http://killer-108-control.net/update",
+            "method": "POST",
+            "user_agent": "Mozilla/5.0",
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "post_data": "{\"action\":\"init\"}"
+          }
+        ],
+        "tcp_connections": [
+          {
+            "remote_ip": "172.16.1.60",
+            "remote_port": 443
+          }
+        ]
+      },
+      "file_system_modifications": {
+        "created": [
+          "C:\\Temp\\killer_108_config.ini"
+        ],
+        "modified": [],
+        "deleted": [
+          "C:\\Temp\\old_killer_108.log"
+        ]
+      },
+      "dropped_files": [
+        {
+          "file_name": "killer_108_payload.dll",
+          "file_type": "DLL",
+          "file_size": "55KB",
+          "hashes": {
+            "md5": "killer108payloadmd5",
+            "sha1": "killer108payloadsha1",
+            "sha256": "killer108payloadsha256"
+          }
+        }
+      ],
+      "behavioral_signatures": {
+        "persistence": true,
+        "anti_analysis": [
+          "sandbox detection",
+          "debugger check"
+        ],
+        "keylogging": false
+      },
+      "memory_analysis": {
+        "extracted_strings": [
+          "killer_1.0.8",
+          "init",
+          "payload"
+        ],
+        "loaded_dlls": [
+          "kernel32.dll",
+          "killer_108.dll"
+        ]
+      },
+      "yara_snort": {
+        "yara_matches": [
+          "rule_killer108"
+        ],
+        "snort_alerts": [
+          "alert_tcp_443"
+        ]
+      },
+      "mitre_attack": {
+        "techniques": [
+          "T1059.003",
+          "T1071"
+        ],
+        "tactics": [
+          "Execution",
+          "Command and Control"
+        ]
+      }
+    },
+    {
+      "metadata": {
         "name": "Dirdex",
         "file_name": "Dirdex.exe",
         "file_size": "220KB",
